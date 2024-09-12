@@ -112,7 +112,7 @@ npm install @types/styled-components
 After the app is up and you have installed your desired dependencies, there are different ways to proceed. 
 
 #### Folder structure 📁
-One way is to build upon the template is to think about the structure of the project, and begin setting up your folders. Some things are probably still not that clear, however a common folder structure looks something like this.
+One way to start building upon the template is to think about the structure of the project, and begin setting up your folders. Some things are probably still not that clear, however a common folder structure looks something like this.
 
 ![alt text](folder_structure.png)
 
