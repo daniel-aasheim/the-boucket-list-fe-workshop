@@ -1,13 +1,13 @@
 
 # Workshop: Modern Frontend Development from Scratch - with React and TanStack Query
-*Total time estimate: 3.5 hours*
+*Total time estimate: 3.5 hours* ⏳
 
 Facilitated by: Daniel Aasheim
 
 *Have you ever wondered how to create a React project from scratch or just want more practice? Then this workshop is perfect for you! We will set up a frontend project using React, Vite, TypeScript, and TanStack Query. The latter will be used to connect to an API for CRUD operations. No prior knowledge is required.*
 
 ## Introduction to today's workshop: ©️The Boucket List
-*Time estimate: 5 minutes*
+*Time estimate: 5 minutes* ⏳
 
 In preparation for this workshop I have built a backend application called **The Boucket List**, which is currently running in Azure, where it has been deployed.
 
@@ -31,7 +31,7 @@ So, today's workshop agenda is the following:
 - **Part B**: The rest of the day, we build upon our template app, and try to connect it with **The Boucket List** API.
 
 ## Part A: Let's build a React app template from scratch! 🔧🔨🏠
-*Time estimate: 20 minutes*
+*Time estimate: 20 minutes* ⏳
 ### Step 0: Install Node.js and npm - hopefully you did this yesterday 😇
 
 Before you can use Vite, you need to install Node.js, which comes with npm (Node Package Manager). Visit the [Node.js website](https://nodejs.org/) to download and install the version of Node.js suitable for your operating system. You should preferrably install the latest version, **v20.17.0**, which is the one I use.
@@ -140,7 +140,7 @@ Other types of folders - not necessarily used today - include:
 
 
 ## Part B: Scratch the application we just built! 🏡🔥😬
-*Time estimate: 3 hours*
+*Time estimate: 3 hours* ⏳
 
 ### Step 1: Clone the workshop repo to get started 🐑
 
