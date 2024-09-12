@@ -1,16 +1,10 @@
 
 # Workshop: Modern Frontend Development from Scratch - with React and TanStack Query
-Estimate: 3.5 hours
+Time estimate: 3.5 hours
 
-Have you wondered how to create a React project from scratch or just want more practice? Then this workshop is perfect for you! We will set up a frontend project using React, Vite, TypeScript, and TanStack Query. The latter will be used to connect to an API for CRUD operations. No prior knowledge is required.
+Facilitated by: Daniel Aasheim
 
-#### Technologies we will use today include:
-- Node.js
-- Vite
-- React
-- TypeScript
-- Axios
-- TanStack Query
+*Have you ever wondered how to create a React project from scratch or just want more practice? Then this workshop is perfect for you! We will set up a frontend project using React, Vite, TypeScript, and TanStack Query. The latter will be used to connect to an API for CRUD operations. No prior knowledge is required.*
 
 ## Today's workshop: The Boucket List (10 min)
 In preparation for this workshop I have built a backend application called **The Boucket List**, which is currently running in Azure, where it has been deployed.
@@ -19,8 +13,18 @@ In preparation for this workshop I have built a backend application called **The
 
 Before we dig in, you can have a sneak-peek at the API, its endpoints and their operations here: [the-boucket-list.azurewebsites.net](https://the-boucket-list.azurewebsites.net/).
 
+#### By the way, the frontend technologies we will use today include:
+- Node.js
+- Vite
+- React
+- TypeScript
+- Axios
+- TanStack Query
+
+Please note that today's workshop will focus exclusively on frontend development, and we will not be covering any backend-related topics.
+
 ### Okaaaaaay, let's go...
-So, the agenda for the day is the following:
+So, today's workshop agenda is the following:
 - **Part A**: In the next 20 minutes or so, we should try to completely set up a template project in React using Vite as the build tool.
 - **Part B**: The rest of the day, we build upon our template app, and try to connect it with **The Boucket List** API.
 
@@ -112,15 +116,7 @@ npm install @types/styled-components
 
 After the template application is up and running, there are different ways to proceed. One way is to build upon the template is to think about the structure of the project, and begin setting up your folder structure. Some things are probably still not that clear, however a common folder structure looks something like this.
 
-src/
-  api/
-  assets/
-  components/
-  hooks/
-  styles/
-  types/
-  App.tsx
-  main.tsx
+![alt text](image-1.png)
 
 For instance, this is how we could populate these folders (suffix in parenthesis is the typical file extension used in the respective folders):
 
@@ -149,41 +145,47 @@ Other types of folders - not necessarily used today - include:
     - for unit and integration tests (.test.ts, .test.tsx)
 
 
-Usually, this step is a big one, and unfortunately, the 3.5 hours given for today's workshop is most likely not sufficient to complete this step (without our artificially intelligent friends, at least).
+**Obviously, the app building itself is the most time consuming step of the process, and unfortunately, the 3.5 hours given for today's workshop is most likely not sufficient to complete this step on our own (without our artificially intelligent friends, at least).**
+
+**Therefore, I have compromized and created most of the files (if not all) for you. However, I have tried to remove crucial components, files, and functions, for you to implement yourself. I hope you could try to complete as many of the tasks as you can without using AI, though. But of course if you're completely stuck, you might as well give it a try. An alternative is to check the repository of the fully functional app.**
 
 
 ## Part B: Scratch the application we just built! 
 
-### Step 1: Clone workshop repo
+### Step 1: Clone the workshop repo
 
- 
+It is now time to say goodbye to your beloved React template project, and get your workshop repo: [the-boucket-list-fe](https://github.com/daniel-aasheim/the-boucket-list-fe-workshop). Well, as you probably figured, you are infact already here! Just clone the repo and get started!
 
-Therefore, I have compromized and created most of the files (if not all) for you. However, I have tried to remove crucial components, files, and functions, for you to implement yourself. I hope you could try to complete as many of the tasks as you can without using AI, though. But of course if you're completely stuck, you might as well give it a try. An alternative is to check the repository of the fully functional app.
+### Step 2: Solve TODO's and code away!
 
-It is now time to say goodbye to your beloved React template project, and get your workshop repo here: link.... Well, as you probably figured, you are infact already here! Just clone the repo and code away!
+**A guide to get started: Navigate to the root of the project, and in the search pane/window search for `TODO`, and you'll get the deal! Throughout the project I have removed more and less crucial code, and swapped them with TODO's, for you to solve. It's important that you solve the TODO's in order, or else you'll run into heaps of problems. I hope you have fun!**
 
-**A guide to get started: Navigate to the root of the project, and in the search pane/window search for `// TODO 1`, `// TODO 2`, etc, and you'll get the deal! Throughout the project I have removed more and less crucial code, and swapped them with todo's, for you to solve. I hope you have fun!**
+Below are the TODO's listed:
 
-If you are able to solve all the tasks, you are very welcome to refactor the project into into even smaller, reusable chunks. Think KISS, DRY, single responisbility, etc. I know that at least the main three components have some duplicated code that I did not have time to refactor myself. You might find other areas of the code. that can be improved through refactoring.
+| TODO    | Task description                                                             | Where to look            | Time estimate    |
+|---------|------------------------------------------------------------------------------|--------------------------|------------------|
+| TODO 1  | Define the parameters for the API functions                                  | listsEndpoint.ts         | <20 minutes      |
+| TODO 2  | Implement the API functions (using Axios)                                    | listsEndpoint.ts         | <30 minutes      |
+| TODO 3  | Implement the handler functions in AllBoucketLists.tsx                       | AllBoucketLists.tsx      | <40 minutes      |
+| TODO 4  | Set up TanStack Query                                                        | main.tsx                 | <5 minutes       |
+| TODO 5  | Implement TanStack Query hooks                                               | useBoucketLists.ts       | <30 minutes      |
+| TODO 6  | Replace useEffect() pattern with TanStack Query hooks in AllBoucketLists.tsx | AllBoucketLists.tsx      | <30 minutes      |
+| TODO 7  | Enable CurrentBoucketList card to be rendered and explore UI                 | App.tsx                  | <5 minutes       |
+| TODO 8  | Enable UnassignedBoucketItems card to be rendered and explore UI             | App.tsx                  | <5 minutes       |
+| TODO 9  | Investigate how the app behaves when query keys changes                      | UI                       | whatever's left  |
 
 
-### Step 1337: Build and Serve for Production (not on today's agenda)
+By the way, if we see that things take more time than expected, you could be a bit pragmatical and copy code from similar components else where in the code.
 
-Once you're ready to build your application for production, you can run:
+On the other hand, if you are able to solve all the tasks, you are very welcome to refactor the project into into even smaller, reusable chunks. Think KISS, DRY, single responisbility, etc. I know that at least the main three components have some duplicated code that I did not have time to refactor myself. You might find other areas of the code, as well, that can be improved through refactoring.
 
-```bash
-npm run build
-```
+***Thank you for joining my workshop today - I bet I had fun! Hope you had too!***
 
-This will create a production build of your app in the `dist` directory.
 
-To preview the production build, you can use the Vite preview feature:
+### Step 1337: Build and serve for production (not on today's agenda)!
 
-```bash
-npm run preview
-```
 
-### Additional notes:
+## Additional notes:
 
 To help you get the most out of the technologies used in this workshop, here are some useful documentation links:
 
