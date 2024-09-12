@@ -6,7 +6,7 @@ import "./index.css";
 import { App } from "./App";
 
 /*
- * TODO 4: Setup TanStack Query.
+ * TODO 4: Set up TanStack Query.
  * We need a QueryClient, and a QueryClientProvider to wrap the App component.
  * Optionally, we can include the ReactQueryDevtools component to help debug the queries from the browser.
  */
