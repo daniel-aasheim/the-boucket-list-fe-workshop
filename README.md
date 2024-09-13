@@ -11,7 +11,7 @@ Facilitated by: Daniel Aasheim
 
 In preparation for this workshop I have built a backend application called **The Boucket List**, which is currently running in Azure, where it has been deployed.
 
-**The Boucket List** is a web API built with ASP.NET Core for managing **Boucket Lists** and **Boucket Items**. It provides endpoints for creating, reading, updating, and deleting (CRUD) both **Boucket lists** and **Boucket items**. The application uses Entity Framework Core for data access and connects to a SQL Server database using Azure Active Directory for passwordless authentication. 🔓
+**The Boucket List** is a web API built with ASP.NET Core for managing **Boucket Lists** and **Boucket Items**. It provides endpoints for creating, reading, updating, and deleting (CRUD) both **Boucket Lists** and **Boucket Items**. The application uses Entity Framework Core for data access and connects to a SQL Server database using Azure Active Directory for passwordless authentication. 🔓
 
 Before we dig in, you can have a sneak-peek at the API, its endpoints and their operations here: [the-boucket-list.azurewebsites.net](https://the-boucket-list.azurewebsites.net/). 👀
 
