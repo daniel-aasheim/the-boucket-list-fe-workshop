@@ -144,11 +144,11 @@ Other types of folders - not necessarily used today - include:
 
 ### Step 1: Clone the workshop repo to get started 🐑
 
-It is now time to say goodbye to our beloved React template project, and get our workshop repo: [the-boucket-list-fe-workshop](https://github.com/daniel-aasheim/the-boucket-list-fe-workshop). Well, as you probably figured, you are infact already here! Just clone the repo and code away!
+**It is now time to say goodbye to our beloved React template project, and get our workshop repo: [the-boucket-list-fe-workshop](https://github.com/daniel-aasheim/the-boucket-list-fe-workshop). Well, as you probably figured, you are infact already here! Just clone the repo and code away!**
 
 ### Step 2: Solve TODO's one by one! ✔️
 
-**A guide to get started: Navigate to the root of the project, and in the search pane/window search for `TODO`, and you'll get the deal! Throughout the project I have removed more and less crucial code, and swapped them with TODO's, for you to solve. It's important that you solve the TODO's in order, or else you'll run into heaps of hurdles. I hope you have fun!**
+**A guide to get started: Navigate to the root of the project, and in the search pane/window type in `TODO`, and you'll get the deal! Throughout the project I have removed more and less crucial code, and swapped them with TODO's, for you to solve. It's important that you solve the TODO's in order, or else you'll run into heaps of hurdles. I hope you have fun!**
 
 Below are the TODO's listed:
 
